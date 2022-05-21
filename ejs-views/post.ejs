@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/head.ejs') %>
+  <body>
+    <%- include('./partials/nav.ejs') %>
+    <img src="/img/Bg.jpg" class="backg" />
+    <article>
+      <div class="info">
+        <span><%= post.createdAt.toLocaleDateString()|| 'No date'%></span>
+        <span><%= post.author%></span>
+      </div>
+      <h1><%= post.title%></h1>
+    </article>
+    <article>
+      <p>Сила <%= post.sil%></p>
+      <p>Ловкость <%= post.lov%></p>
+      <p>Интелект <%= post.int%></p>
+      <p>Телосложение <%= post.tel%></p>
+      <p>Память <%= post.pam%></p>
+      <p>Восприятие <%= post.vos%></p>
+    </article>
+
+    <div class="container">
+      <div class="image-container">
+        <img src="/img/<%= post.img%>" class="active" name="text" />
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/head.ejs') %>
+
+  <body>
+    <%- include('./partials/nav.ejs') %>
+    <img src="/img/Bg.jpg" class="backg" />
+
+    <header>Create personage</header>
+    <button class="tablink" onclick="menu0()">Origin</button>
+    <button class="tablink" onclick="menu1()">Аppearance</button>
+    <button class="tablink" onclick="menu2()">Skills</button>
+
+    <form id="post-form" method="post" action="/add-post">
+      <div class="author">
+        <label
+          >Author
+          <input type="text" name="author" />
+        </label>
+      </div>
+      <div class="hero">
+        <label
+          >Hero's Name
+          <input type="text" name="title" />
+        </label>
+      </div>
+
+      <input type="text" value="" id="a" name="img" class="behaind" />
+      <input type="text" value="10" id="silV" name="sil" class="behaind" />
+      <input type="text" value="10" id="lovV" name="lov" class="behaind" />
+      <input type="text" value="10" id="intV" name="int" class="behaind" />
+      <input type="text" value="10" id="telV" name="tel" class="behaind" />
+      <input type="text" value="10" id="pamV" name="pam" class="behaind" />
+      <input type="text" value="10" id="vosV" name="vos" class="behaind" />
+      <div class="form-button">
+        <input type="submit" value="Send" />
+      </div>
+    </form>
+
+    <div class="container">
+      <div class="image-container">
+        <img src="/img/1111.PNG" id="content1111" class="active" />
+        <img src="/img/1112.PNG" id="content1112" />
+        <img src="/img/1113.PNG" id="content1113" />
+        <img src="/img/1121.PNG" id="content1121" />
+        <img src="/img/1122.PNG" id="content1122" />
+        <img src="/img/1123.PNG" id="content1123" />
+        <img src="/img/1131.PNG" id="content1131" />
+        <img src="/img/1132.PNG" id="content1132" />
+        <img src="/img/1133.PNG" id="content1133" />
+        <img src="/img/1211.PNG" id="content1211" />
+        <img src="/img/1212.PNG" id="content1212" />
+        <img src="/img/1213.PNG" id="content1213" />
+        <img src="/img/1221.PNG" id="content1221" />
+        <img src="/img/1222.PNG" id="content1222" />
+        <img src="/img/1223.PNG" id="content1223" />
+        <img src="/img/1231.PNG" id="content1231" />
+        <img src="/img/1232.PNG" id="content1232" />
+        <img src="/img/1233.PNG" id="content1233" />
+        <img src="/img/1311.PNG" id="content1311" />
+        <img src="/img/1312.PNG" id="content1312" />
+        <img src="/img/1313.PNG" id="content1313" />
+        <img src="/img/1321.PNG" id="content1321" />
+        <img src="/img/1322.PNG" id="content1322" />
+        <img src="/img/1323.PNG" id="content1323" />
+        <img src="/img/1331.PNG" id="content1331" />
+        <img src="/img/1332.PNG" id="content1332" />
+        <img src="/img/2111.PNG" id="content2111" />
+        <img src="/img/2112.PNG" id="content2112" />
+        <img src="/img/2113.PNG" id="content2113" />
+        <img src="/img/2121.PNG" id="content2121" />
+        <img src="/img/2122.PNG" id="content2122" />
+        <img src="/img/2123.PNG" id="content2123" />
+        <img src="/img/2131.PNG" id="content2131" />
+        <img src="/img/2132.PNG" id="content2132" />
+        <img src="/img/2133.PNG" id="content2133" />
+        <img src="/img/2211.PNG" id="content2211" />
+        <img src="/img/2212.PNG" id="content2212" />
+        <img src="/img/2213.PNG" id="content2213" />
+        <img src="/img/2221.PNG" id="content2221" />
+        <img src="/img/2222.PNG" id="content2222" />
+        <img src="/img/2223.PNG" id="content2223" />
+        <img src="/img/2231.PNG" id="content2231" />
+        <img src="/img/2232.PNG" id="content2232" />
+        <img src="/img/2233.PNG" id="content2233" />
+        <img src="/img/2311.PNG" id="content2311" />
+        <img src="/img/2312.PNG" id="content2312" />
+        <img src="/img/2313.PNG" id="content2313" />
+        <img src="/img/2321.PNG" id="content2321" />
+        <img src="/img/2322.PNG" id="content2322" />
+        <img src="/img/2323.PNG" id="content2323" />
+        <img src="/img/2331.PNG" id="content2331" />
+        <img src="/img/2332.PNG" id="content2332" />
+        <img src="/img/2333.PNG" id="content2333" />
+        <img src="/img/3111.PNG" id="content3111" />
+        <img src="/img/3112.PNG" id="content3112" />
+        <img src="/img/3113.PNG" id="content3113" />
+        <img src="/img/3121.PNG" id="content3121" />
+        <img src="/img/3122.PNG" id="content3122" />
+        <img src="/img/3123.PNG" id="content3123" />
+        <img src="/img/3131.PNG" id="content3131" />
+        <img src="/img/3132.PNG" id="content3132" />
+        <img src="/img/3133.PNG" id="content3133" />
+        <img src="/img/3211.PNG" id="content3211" />
+        <img src="/img/3212.PNG" id="content3212" />
+        <img src="/img/3213.PNG" id="content3213" />
+        <img src="/img/3221.PNG" id="content3221" />
+        <img src="/img/3222.PNG" id="content3222" />
+        <img src="/img/3223.PNG" id="content3223" />
+        <img src="/img/3231.PNG" id="content3231" />
+        <img src="/img/3232.PNG" id="content3232" />
+        <img src="/img/3233.PNG" id="content3233" />
+        <img src="/img/3311.PNG" id="content3311" />
+        <img src="/img/3312.PNG" id="content3312" />
+        <img src="/img/3313.PNG" id="content3313" />
+        <img src="/img/3321.PNG" id="content3321" />
+        <img src="/img/3322.PNG" id="content3322" />
+        <img src="/img/3323.PNG" id="content3323" />
+        <img src="/img/3331.PNG" id="content3331" />
+        <img src="/img/3332.PNG" id="content3332" />
+        <img src="/img/3333.PNG" id="content3333" />
+      </div>
+    </div>
+    <div id="arrows" class="onebutt">
+      <img src="/img/ra.png" class="imgR" />
+      <button id="prev" onclick="prev()">&lt;</button>
+      <button id="next" onclick="next()">&gt;</button>
+      <button id="prev2" onclick="prev2()">&lt;</button>
+      <button id="next2" onclick="next2()">&gt;</button>
+      <button id="prev3" onclick="prev3()">&lt;</button>
+      <button id="next3" onclick="next3()">&gt;</button>
+      <button id="prev4" onclick="prev4()">&lt;</button>
+      <button id="next4" onclick="next4()">&gt;</button>
+      <label id="leatherColor">Skin color</label>
+      <label id="face">Face</label>
+      <label id="hairStyle">Hairstyle</label>
+      <label id="hairColor">Hair color</label>
+      <label id="leatherColorValue">Satin</label>
+      <label id="faceValue">Face 1</label>
+      <label id="hairStyleValue">Hairstyle 1</label>
+      <label id="hairColorValue">Bondar</label>
+    </div>
+
+    <div id="qualityDiv" class="onebutt">
+      <img src="/img/ra.png" class="imgR2" />
+      <div id="minusV">
+        <button id="prevV" onclick="minusS()">-</button>
+        <button id="prev2V" onclick="minusL()">-</button>
+        <button id="prev3V" onclick="minusI()">-</button>
+        <button id="prev4V" onclick="minusT()">-</button>
+        <button id="prev5V" onclick="minusP()">-</button>
+        <button id="prev6V" onclick="minusVo()">-</button>
+      </div>
+      <div id="plusV">
+        <button id="nextV" onclick="plusS()">+</button>
+        <button id="next2V" onclick="plusL()">+</button>
+        <button id="next3V" onclick="plusI()">+</button>
+        <button id="next4V" onclick="plusT()">+</button>
+        <button id="next5V" onclick="plusP()">+</button>
+        <button id="next6V" onclick="plusVo()">+</button>
+      </div>
+
+      <label id="numberL">Skills left :</label>
+      <label id="strengthL">Strength</label>
+      <label id="dexterityL">Вexterity</label>
+      <label id="intelligenceL">Intellect</label>
+      <label id="bodyL">Physique</label>
+      <label id="memoryL">Memory</label>
+      <label id="perceptionL">Perception</label>
+      <label id="numberV">3</label>
+      <label id="strengthV">10</label>
+      <label id="dexterityV">10</label>
+      <label id="intelligenceV">10</label>
+      <label id="bodyV">10</label>
+      <label id="memoryV">10</label>
+      <label id="perceptionV">10</label>
+    </div>
+
+    <div class="brown-box" id="story">
+      <img src="/img/ra.png" class="imgR0" />
+      <div class="centered">
+        <p>
+          &nbsp &nbsp &nbsp The humans are the predominant race of Rivelon:
+          intelligent, flexible, and superstitious expansionists. The Civil War
+          devastated their lands, but it did not undermine their dominance.
+        </p>
+      </div>
+    </div>
+
+    <script>
+      let valueN = 3;
+      let silaV = 10;
+      let lovkV = 10;
+      let intelV = 10;
+      let TelosV = 10;
+      let PamV = 10;
+      let VospV = 10;
+      function minusS() {
+        if (valueN < 3) {
+          valueN++;
+          silaV--;
+        }
+        document.getElementById("numberV").innerHTML = valueN;
+        document.getElementById("strengthV").innerHTML = silaV;
+        if (valueN > 2) {
+          document.getElementById("minusV").classList.add("behaind");
+        }
+        if (valueN > 0) {
+          document.getElementById("plusV").classList.remove("behaind");
+          document.getElementById("plusV").classList.add("twobutt");
+        }
+        document.getElementById("silV").value = silaV;
+      }
+      function plusS() {
+        if (valueN > 0) {
+          valueN--;
+          silaV++;
+        }
+        chek();
+        document.getElementById("numberV").innerHTML = valueN;
+        document.getElementById("strengthV").innerHTML = silaV;
+        document.getElementById("silV").value = silaV;
+      }
+      function minusL() {
+        if (valueN < 3) {
+          valueN++;
+          lovkV--;
+        }
+        document.getElementById("numberV").innerHTML = valueN;
+        document.getElementById("dexterityV").innerHTML = lovkV;
+        if (valueN > 2) {
+          document.getElementById("minusV").classList.add("behaind");
+        }
+        if (valueN > 0) {
+          document.getElementById("plusV").classList.remove("behaind");
+          document.getElementById("plusV").classList.add("twobutt");
+        }
+        document.getElementById("lovV").value = lovkV;
+      }
+      function plusL() {
+        if (valueN > 0) {
+          valueN--;
+          lovkV++;
+        }
+        chek();
+        document.getElementById("numberV").innerHTML = valueN;
+        document.getElementById("dexterityV").innerHTML = lovkV;
+        document.getElementById("lovV").value = lovkV;
+      }
+      function minusI() {
+        if (valueN < 3) {
+          valueN++;
+          intelV--;
+        }
+        document.getElementById("numberV").innerHTML = valueN;
+        document.getElementById("intelligenceV").innerHTML = intelV;
+        if (valueN > 2) {
+          document.getElementById("minusV").classList.add("behaind");
+        }
+        if (valueN > 0) {
+          document.getElementById("plusV").classList.remove("behaind");
+          document.getElementById("plusV").classList.add("twobutt");
+        }
+        document.getElementById("intV").value = intelV;
+      }
+      function plusI() {
+        if (valueN > 0) {
+          valueN--;
+          intelV++;
+        }
+        chek();
+        document.getElementById("numberV").innerHTML = valueN;
+        document.getElementById("intelligenceV").innerHTML = intelV;
+        document.getElementById("intV").value = intelV;
+      }
+      function minusT() {
+        if (valueN < 3) {
+          valueN++;
+          TelosV--;
+        }
+        document.getElementById("numberV").innerHTML = valueN;
+        document.getElementById("bodyV").innerHTML = TelosV;
+        if (valueN > 2) {
+          document.getElementById("minusV").classList.add("behaind");
+        }
+        if (valueN > 0) {
+          document.getElementById("plusV").classList.remove("behaind");
+          document.getElementById("plusV").classList.add("twobutt");
+        }
+        document.getElementById("telV").value = TelosV;
+      }
+      function plusT() {
+        if (valueN > 0) {
+          valueN--;
+          TelosV++;
+        }
+        chek();
+        document.getElementById("numberV").innerHTML = valueN;
+        document.getElementById("bodyV").innerHTML = TelosV;
+        document.getElementById("telV").value = TelosV;
+      }
+      function minusP() {
+        if (valueN < 3) {
+          valueN++;
+          PamV--;
+        }
+        document.getElementById("numberV").innerHTML = valueN;
+        document.getElementById("memoryV").innerHTML = PamV;
+        if (valueN > 2) {
+          document.getElementById("minusV").classList.add("behaind");
+        }
+        if (valueN > 0) {
+          document.getElementById("plusV").classList.remove("behaind");
+          document.getElementById("plusV").classList.add("twobutt");
+        }
+        document.getElementById("pamV").value = PamV;
+      }
+      function plusP() {
+        if (valueN > 0) {
+          valueN--;
+          PamV++;
+        }
+        chek();
+        document.getElementById("numberV").innerHTML = valueN;
+        document.getElementById("memoryV").innerHTML = PamV;
+        document.getElementById("pamV").value = PamV;
+      }
+      function minusVo() {
+        if (valueN < 3) {
+          valueN++;
+          VospV--;
+        }
+        document.getElementById("numberV").innerHTML = valueN;
+        document.getElementById("perceptionV").innerHTML = VospV;
+        if (valueN > 2) {
+          document.getElementById("minusV").classList.add("behaind");
+        }
+        if (valueN > 0) {
+          document.getElementById("plusV").classList.remove("behaind");
+          document.getElementById("plusV").classList.add("twobutt");
+        }
+        document.getElementById("vosV").value = VospV;
+      }
+      function plusVo() {
+        if (valueN > 0) {
+          valueN--;
+          VospV++;
+        }
+        chek();
+        document.getElementById("numberV").innerHTML = valueN;
+        document.getElementById("perceptionV").innerHTML = VospV;
+        document.getElementById("vosV").value = VospV;
+      }
+      function chek() {
+        if (valueN < 1) {
+          document.getElementById("plusV").classList.remove("twobutt");
+          document.getElementById("plusV").classList.add("behaind");
+        }
+        if (valueN < 3) {
+          document.getElementById("minusV").classList.remove("behaind");
+          document.getElementById("minusV").classList.add("twobutt");
+        }
+        if (valueN > 0) {
+          document.getElementById("plusV").classList.remove("behaind");
+          document.getElementById("plusV").classList.add("twobutt");
+        }
+      }
+    </script>
+    <script>
+      let i = "1";
+      let w = "1";
+      let e = "1";
+      let r = "1";
+
+      let j = 3;
+      var leatherTheame = ["Satin", "August Sun", "Caramel"];
+      var faceTheame = ["Face 1", "Face 2", "Face 3"];
+      var hairstyleTheame = ["Hairstyle 1", "Hairstyle 2", "Hairstyle 3"];
+      var colorleatherTheame = ["Bondar", "Reaper", "Jester"];
+      let lT = 0;
+      let fT = 0;
+      let hT = 0;
+      let cT = 0;
+
+      function next() {
+        document
+          .getElementById("content" + i + w + e + r)
+          .classList.remove("active");
+        i++;
+        if (i > 3) {
+          i = 1;
+        }
+        document.getElementById("a").value = i + w + e + r + ".PNG";
+        document
+          .getElementById("content" + i + w + e + r)
+          .classList.add("active");
+
+        lT++;
+        if (lT > 2) {
+          lT = 0;
+        }
+
+        document.getElementById("leatherColorValue").innerHTML =
+          leatherTheame[lT];
+
+        document.getElementById("a").value = "" + i + w + e + r + ".PNG";
+      }
+
+      function next2() {
+        document
+          .getElementById("content" + i + w + e + r)
+          .classList.remove("active");
+        w++;
+        if (w > 3) {
+          w = 1;
+        }
+
+        document
+          .getElementById("content" + i + w + e + r)
+          .classList.add("active");
+
+        fT++;
+        if (fT > 2) {
+          fT = 0;
+        }
+        document.getElementById("faceValue").innerHTML = faceTheame[fT];
+        document.getElementById("a").value = "" + i + w + e + r + ".PNG";
+      }
+
+      function next3() {
+        document
+          .getElementById("content" + i + w + e + r)
+          .classList.remove("active");
+        e++;
+        if (e > 3) {
+          e = 1;
+        }
+        document
+          .getElementById("content" + i + w + e + r)
+          .classList.add("active");
+
+        hT++;
+        if (hT > 2) {
+          hT = 0;
+        }
+        document.getElementById("hairStyleValue").innerHTML =
+          hairstyleTheame[hT];
+        document.getElementById("a").value = "" + i + w + e + r + ".PNG";
+      }
+
+      function next4() {
+        document
+          .getElementById("content" + i + w + e + r)
+          .classList.remove("active");
+        r++;
+        if (r > 3) {
+          r = 1;
+        }
+        document
+          .getElementById("content" + i + w + e + r)
+          .classList.add("active");
+
+        cT++;
+        if (cT > 2) {
+          cT = 0;
+        }
+        document.getElementById("hairColorValue").innerHTML =
+          colorleatherTheame[cT];
+        document.getElementById("a").value = "" + i + w + e + r + ".PNG";
+      }
+
+      function prev() {
+        document
+          .getElementById("content" + i + w + e + r)
+          .classList.remove("active");
+        i--;
+        if (i < 1) {
+          i = 3;
+        }
+        document
+          .getElementById("content" + i + w + e + r)
+          .classList.add("active");
+
+        lT--;
+        if (lT < 0) {
+          lT = 2;
+        }
+        document.getElementById("leatherColorValue").innerHTML =
+          leatherTheame[lT];
+        document.getElementById("a").value = "" + i + w + e + r + ".PNG";
+      }
+      function prev2() {
+        document
+          .getElementById("content" + i + w + e + r)
+          .classList.remove("active");
+        w--;
+        if (w < 1) {
+          w = 3;
+        }
+        document
+          .getElementById("content" + i + w + e + r)
+          .classList.add("active");
+
+        fT--;
+        if (fT > 0) {
+          fT = 2;
+        }
+        document.getElementById("faceValue").innerHTML = faceTheame[fT];
+        document.getElementById("a").value = "" + i + w + e + r + ".PNG";
+      }
+      function prev3() {
+        document
+          .getElementById("content" + i + w + e + r)
+          .classList.remove("active");
+        e--;
+        if (e < 1) {
+          e = 3;
+        }
+        document
+          .getElementById("content" + i + w + e + r)
+          .classList.add("active");
+
+        hT--;
+        if (hT > 0) {
+          hT = 2;
+        }
+        document.getElementById("hairStyleValue").innerHTML =
+          hairstyleTheame[hT];
+        document.getElementById("a").value = "" + i + w + e + r + ".PNG";
+      }
+      function prev4() {
+        document
+          .getElementById("content" + i + w + e + r)
+          .classList.remove("active");
+        r--;
+        if (r < 1) {
+          r = 3;
+        }
+        document
+          .getElementById("content" + i + w + e + r)
+          .classList.add("active");
+
+        cT--;
+        if (cT > 0) {
+          cT = 2;
+        }
+        document.getElementById("hairColorValue").innerHTML =
+          colorleatherTheame[cT];
+        document.getElementById("a").value = "" + i + w + e + r + ".PNG";
+      }
+    </script>
+    <script>
+      function menu0() {
+        document
+          .getElementById("arrows")
+          .classList.remove("onebutt", "twobutt");
+        document
+          .getElementById("qualityDiv")
+          .classList.remove("onebutt", "twobutt");
+        document.getElementById("story").classList.add("twobutt");
+        document.getElementById("arrows").classList.add("onebutt");
+        document.getElementById("qualityDiv").classList.add("onebutt");
+      }
+      function menu1() {
+        document
+          .getElementById("arrows")
+          .classList.remove("onebutt", "twobutt");
+        document.getElementById("story").classList.remove("onebutt", "twobutt");
+        document
+          .getElementById("qualityDiv")
+          .classList.remove("onebutt", "twobutt");
+        document.getElementById("story").classList.add("onebutt");
+        document.getElementById("arrows").classList.add("twobutt");
+        document.getElementById("qualityDiv").classList.add("onebutt");
+      }
+      function menu2() {
+        document
+          .getElementById("arrows")
+          .classList.remove("onebutt", "twobutt");
+        document.getElementById("story").classList.remove("onebutt", "twobutt");
+        document
+          .getElementById("qualityDiv")
+          .classList.remove("onebutt", "twobutt");
+        document.getElementById("story").classList.add("onebutt");
+        document.getElementById("arrows").classList.add("onebutt");
+        document.getElementById("qualityDiv").classList.add("twobutt");
+      }
+    </script>
+  </body>
+</html>

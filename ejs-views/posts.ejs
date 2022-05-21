@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/head.ejs') %>
+  <body>
+    <%- include('./partials/nav.ejs') %>
+    <div class="backc"></div>
+    <h3>Heroes:</h3>
+    <ul>
+      <% if (posts.length) { %> <% posts.forEach(({ id, title, createdAt, text,
+      author }) => { %>
+      <li>
+        <article>
+          <h1>
+            <a href="/posts/<%= id%>"><%= title %></a>
+          </h1>
+          <p><%= text %></p>
+          <div class="info">
+            <span><%= createdAt.toLocaleDateString() %></span>
+            <span><%= author %></span>
+          </div>
+        </article>
+      </li>
+      <% }) %> <% } %>
+    </ul>
+  </body>
+</html>

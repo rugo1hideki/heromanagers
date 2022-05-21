@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/head.ejs') %>
+
+  <body>
+    <div class="image-container">
+      <img src="/img/Bg.jpg" id="day" class="BActive" />
+      <img src="/img/Bg1.png" id="night" />
+    </div>
+    <%- include('./partials/nav.ejs') %>
+    <h1>Create Personage</h1>
+    <article>
+      <p class="mainMenuText">Build with Node.js, Express, MongoDB, EJS</p>
+    </article>
+
+    <br />
+    <article>
+      <p class="mainMenuText">
+        This project was based on the game Divinity Original Sin 2. On this site
+        you can create your own character from that game. Now implemented the
+        choice of name, appearance, skills and view characters.
+      </p>
+    </article>
+    <script>
+      var D = new Date(),
+        hour = D.getHours();
+      console.log(D.getHours());
+
+      if (hour >= 8 && hour < 23) {
+        document.getElementById("day").classList.add("BActive");
+      } else {
+        document.getElementById("day").classList.remove("BActive");
+        document.getElementById("night").classList.add("BActive");
+      }
+    </script>
+  </body>
+</html>
