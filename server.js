@@ -36,12 +36,12 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.static("styles"));
 
 app.get("/", (req, res) => {
-  const title = "Главная";
+  const title = "Home";
   res.render(createPath("index"), { title });
 });
 
 app.get("/posts/:id", (req, res) => {
-  const title = "Герой";
+  const title = "Hero";
   Post.findById(req.params.id)
     .then((post) => res.render(createPath("post"), { post, title }))
     .catch((error) => {
@@ -51,7 +51,7 @@ app.get("/posts/:id", (req, res) => {
 });
 
 app.get("/posts", (req, res) => {
-  const title = "Герои";
+  const title = "Heroes";
   Post.find()
     .sort({ createdAt: -1 })
     .then((posts) => res.render(createPath("posts"), { posts, title }))
@@ -139,7 +139,7 @@ app.post(
 );
 
 app.get("/add-post", (req, res) => {
-  const title = "Добавить героя";
+  const title = "Add a hero";
   res.render(createPath("add-post"), { title });
 });
 
